@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:local="clr-namespace:decode18demo"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="decode18demo.ConfigPage"
+    Title="Color Setting"
+    BindingContext="{x:Static local:AppSettings.Instance}">
+
+    <StackLayout>
+        <Label Text="#decode18 デモアプリ" />
+        <Label Text="背景の色" />
+        <Entry Text="{Binding BackgroundColor, Mode=TwoWay}" />
+        <Label Text="文字の色" />
+        <Entry Text="{Binding FontColor, Mode=TwoWay}" />
+        <Label Text="アクセント色" />
+        <Entry Text="{Binding AccentColor, Mode=TwoWay}" />
+    </StackLayout>
+</ContentPage>

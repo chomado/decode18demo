@@ -13,5 +13,10 @@ namespace decode18demo
         {
             InitializeComponent();
         }
+
+        void Handle_Clicked(object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new ConfigPage());
+        }
     }
 }
